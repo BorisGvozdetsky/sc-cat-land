@@ -1,0 +1,39 @@
+.menu__list
+    margin: 0
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-self: center
+    @include r(767px)
+
+        justify-content: center
+        align-items: center
+
+.menu__item
+    list-style: none
+    margin-right: 62px
+    &:last-child
+        margin-right: 0
+    @include r(1023px)
+        margin-right: 35px
+    @include r(767px)
+        width: 100%
+        margin-right: 10px
+        margin-bottom: 30px
+        text-align: center
+
+
+.menu__link
+    font-size: 18px
+    line-height: 22px
+    color: $color-white
+    text-decoration: none
+    &:hover
+        text-decoration: underline
+    &:active
+        opacity: .7 
+    @include r(767px)
+       color: $color-black
+       font-size: 20px
+       line-height: 30px

@@ -1,0 +1,101 @@
+.subscribe 
+    display: flex
+    padding: 82px 80px 92px
+    background: $color-footer-bg
+    @include r(1199px)
+        padding: 50px
+    @include r(1023px)
+        display: block
+        padding: 30px
+
+
+
+.subscribe__content
+    margin-right: 50px 
+    @include r(1023px)
+        margin-right: 0
+        margin-bottom: 30px
+
+
+.subscribe__form
+    max-width: 566px
+    width: 100%
+    padding-top: 7px
+    @include r(1023px)
+        padding-top: 0
+
+.subscribe__container
+    display: flex
+    margin-bottom: 26px
+    @include r(767px)
+        display: block
+
+.subscribe__title
+    margin: 0
+    margin-bottom: 26px
+    font-family: $font-bold
+    font-size: 48px
+    line-height: 59px
+    color: $color-white
+    @include r(1023px)
+        font-size: 38px
+        line-height: 49px
+        margin-bottom: 20px
+    @include r(767px)
+        font-size: 30px
+        line-height: 41px
+
+
+.subscribe__text
+    margin: 0
+    font-size: 28px
+    line-height: 26px
+    color: $color-white
+    font-family: $font-regular
+    @include r(1023px)
+        font-size: 22px
+        line-height: 20px
+
+.subscribe__input
+    padding: 0
+    margin: 0
+    border: 0
+    padding: 10px 10px 10px 33px
+    border-radius: 10px
+    width: 100%
+    max-width: 300px
+    flex: none
+    height: 65px
+    font-size: 14px
+    line-height: 17px
+    margin-right: 16px
+    &:hover
+        background: $color-grey
+    @include r(767px)
+        margin-right: 0
+        margin-bottom: 20px
+
+.subscribe__btn
+    padding: 0
+    border: 0
+    font: inherit
+    color: $color-white
+    background-color: $color-blue
+    font-family: $font-bold
+    font-size: 14px
+    line-height: 17px
+    cursor: pointer
+    flex-grow: 1
+    height: 65px
+    border-radius: 10px
+    padding: 10px 10px 10px 10px
+    &:hover
+        background: rgba($color-blue, 0.8)
+    &:active
+        background: rgba($color-blue, 0.5)
+    @include r(767px)
+        width: 100%
+
+
+
+

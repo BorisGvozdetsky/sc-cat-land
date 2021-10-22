@@ -1,0 +1,52 @@
+.checkbox
+    display: flex
+    position: relative
+
+.checkbox__label
+    display: block
+    cursor: pointer
+    position: relative
+    text-align: center
+    font-size: 14px
+    line-height: 17px
+    color: $color-white
+    font-family: $font-regular
+    text-transform: initial
+    padding-left: 37px
+    &:hover
+        opacity: .9
+    &::before
+        position: absolute
+        display: block
+        content: ""
+        width: 18px
+        height: 18px
+        top: 0
+        left: 0
+        background: $color-blue
+        border-radius: 3px
+    &::after
+        position: absolute
+        content: ""
+        width: 10px
+        height: 7px
+        left: 4px
+        top: 5px
+        z-index: 3
+        background: url(../images/checkbox.svg) no-repeat center
+        opacity: 0
+
+.checkbox__input
+    position: absolute
+    opacity: 0
+    z-index: 1
+    top: 0
+    left: 0
+    width: 18px
+    height: 18px
+    
+.checkbox__input:checked + .checkbox__label::after
+    opacity: 1
+
+
+

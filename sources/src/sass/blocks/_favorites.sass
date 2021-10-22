@@ -1,0 +1,41 @@
+.favorites
+    position: relative
+    width: 46px
+    height: 46px
+
+
+.favorites__input
+    position: absolute
+    cursor: pointer
+    opacity: 0
+    z-index: 1
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+
+.favorites__label
+    display: block
+    width: 100%
+    height: 100%
+    background: url(../images/favorites.svg) no-repeat center
+    opacity: .5
+        
+
+
+.favorites__input:hover + .favorites__label
+    opacity: .7
+    
+.favorites__input:checked + .favorites__label
+    opacity: 1
+
+.favorites__notification
+    display: none
+    position: absolute
+    top: 100%
+    left: 50%
+    transform: translate(-50%, 0)
+    font-size: 12px
+    line-height: 15px
+    color: $color-white
+

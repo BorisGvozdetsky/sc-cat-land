@@ -1,0 +1,38 @@
+extends base/_layout
+block head
+    title Тестовое задание
+block page
+    h1.visually-hidden Магазин котиков 
+    .filters 
+        p.filters__title Сортировать по:
+        a.filters__link.filters__link-price(href="#!") Цене
+        a.filters__link.filters__link-age(href="#!") Возрасту
+    .cards 
+    a.showmore(href="#!") Показать еще 20
+    button.scrollup(type="button")
+
+    template(id="card" style="display:none")
+        article.card.cards__item 
+            picture
+                source(class="card__img-source" srcset="images/cat-1@1x.webp, images/cat-1@2x.webp 2x" type="image/webp")
+                img(class="card__img" src="images/cat-1@1x.jpg" srcset="images/cat-1@2x.jpg 2x" alt="Кот полосатый" width="380" height="264")
+            .favorites.card__favorites
+                input.favorites__input(type="checkbox" id="favorites1")
+                label.favorites__label(for="favorites1")
+                span.favorites__notification Добавлено
+            p.card__sale -40%
+            .card__content
+                p.card__title Кот полосатый
+                .card__info 
+                    p.card__color Коричневый окрас
+                    p.card__age 
+                        span.card__age-num 2
+                        |  мес.
+                        span.card__age-text Возраст
+                    p.card__properties
+                        span.card__properties-num 4
+                        span.card__properties-text Кол-во лап
+                p.card__price
+                    span.card__price-num 30 000
+                    |  руб.
+            a.card__btn(href="#!") Купить

@@ -1,0 +1,131 @@
+.card
+    position: relative
+    display: flex
+    flex-direction: column
+    background: $color-card-bg
+    border-radius: 0px 0px 11px 11px
+
+.card__img
+    display: block
+    width: 100%
+    margin-bottom: 29px
+
+.card__favorites
+    position: absolute
+    right: 32px
+    top: 33px
+
+.card__sale
+    margin: 0
+    position: absolute
+    top: 34px
+    left: 38px
+    border-radius: 10px
+    background: $color-red
+    min-width: 78px
+    font-size: 16px
+    line-height: 20px
+    color: $color-white
+    text-align: center
+    padding: 10px
+
+.card__content
+    padding: 0 29px
+    flex-grow: 1
+    @include r(1023px)
+        padding: 0 20px
+
+.card__title
+    margin: 0
+    font-family: $font-bold
+    font-size: 24px
+    line-height: 29px
+    color: $color-black
+    margin-bottom: 22px
+
+.card__info
+    display: flex
+    margin-bottom: 20px
+
+.card__color
+    position: relative
+    margin: 0
+    padding-left: 22px
+    font-size: 12px
+    line-height: 15px
+    max-width: 105px
+    margin-right: 25px
+    &:before
+        position: absolute
+        content: ""
+        display: block
+        width: 4px
+        background: $color-blue
+        left: 0
+        top: 1px
+        bottom: 7px
+    @include r(767px)
+        padding-left: 15px
+
+.card__age
+    font-family: $font-bold
+    font-size: 16px
+    line-height: 20px
+    margin: 0
+    margin-right: 46px
+    @include r(767px)
+        font-size: 15px
+        line-height: 18px
+        margin-right: 30px
+
+.card__age-text
+    display: block
+    font-size: 12px
+    line-height: 15px
+    font-family: $font-regular
+
+.card__properties
+    font-family: $font-bold
+    font-size: 16px
+    line-height: 20px
+    margin: 0
+    @include r(767px)
+        font-size: 15px
+        line-height: 18px
+
+.card__properties-text
+    display: block
+    font-size: 12px
+    line-height: 15px
+    font-family: $font-regular
+
+
+.card__price
+    font-family: $font-bold
+    font-size: 24px
+    line-height: 29px
+    margin-bottom: 28px
+
+
+.card__btn
+    display: block
+    background: $color-blue
+    color: $color-white
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    text-align: center
+    text-decoration: none
+    padding: 22px
+    border-radius: 0px 0px 10px 10px
+    &:hover
+        background: rgba($color-blue, 0.8)
+    &:active
+        background: rgba($color-blue, 0.5)
+
+.card__btn--dark
+    background: $color-footer-bg
+    &:hover
+        background: rgba($color-footer-bg, 0.8)
+    &:active
+        background: rgba($color-footer-bg, 0.5)

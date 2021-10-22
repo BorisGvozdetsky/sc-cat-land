@@ -1,0 +1,20 @@
+.showmore
+    display: block
+    width: 380px
+    margin: 0 auto
+    background: $color-white
+    color: $color-black
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+    text-decoration: none
+    padding: 24px
+    border-radius: 10px
+    border: 1px solid $color-border
+    &:hover
+        background: $color-card-bg
+    &:active
+        background: rgba($color-card-bg, 0.5)
+
+    @include r(767px)
+        width: 300px

@@ -1,0 +1,114 @@
+.header
+    flex: none
+    background: url(../images/header-bg.jpg) no-repeat center top / cover
+    min-height: 252px
+    padding: 25px 0 30px
+    @include r(767px)
+        min-height: 0
+        padding: 15px 0 35px
+
+.header__panel
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 36px
+    @include r(767px)
+        margin-bottom: 25px
+        flex-wrap: wrap
+
+.header__logo
+    margin-right: 120px
+    flex: none
+    &:hover
+        opacity: .7
+    @include r(1023px)
+        margin-right: 40px
+    @include r(767px)
+        width: 50px
+
+.header__logo-img
+    display: block
+
+.header__menu
+    margin-right: 30px
+    @include r(1023px)
+        margin-right: 20px
+    @include r(767px)
+        margin: 0
+        position: fixed
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background: $color-white
+        z-index: 1000
+        padding-top: 100px
+        display: none
+
+.header__menu--active
+    @include r(767px)
+        display: block
+
+.header__menu-btn
+    position: relative
+    padding: 0
+    border: 0
+    font: inherit
+    color: inherit
+    background: transparent
+    cursor: pointer
+    width: 30px
+    height: 30px
+    display: none
+
+    &::before,
+    &::after
+        position: absolute
+        display: block
+        content: ""
+        width: 100%
+        height: 3px
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background: $color-white
+        border-radius: 2px
+        margin-top: -4px
+    &::after
+        margin-top: 4px
+    @include r(767px)
+        display: block
+        margin-left: auto
+
+.header__menu-btn--active
+    &::before,
+    &::after
+        background: $color-black
+        z-index: 1500
+
+    &::after
+        transform: translate(-50%, -50%) rotate(-45deg)
+        margin: 0
+
+    &::before
+        transform: translate(-50%, -50%) rotate(45deg)
+        margin: 0
+        
+.header__contacts
+    margin-left: auto
+    padding-top: 19px
+    @include r(1023px)
+        padding-top: 26px
+    @include r(767px)
+        display: none
+    
+.header__result
+    margin: 0
+    color: $color-white
+    font-size: 38px
+    line-height: 46px
+    font-family: $font-bold
+    @include r(767px)
+        font-size: 26px
+        line-height: 34px
+

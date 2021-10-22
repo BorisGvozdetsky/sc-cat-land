@@ -1,0 +1,4 @@
+mixin picture(classname, name, alt, type, width, height)
+    picture
+        source(srcset="images/" + name + "@1x.webp, images/" + name + "@2x.webp 2x" type="image/webp")
+        img(class=classname src="images/" + name + "@1x." + type + ""  srcset="images/" + name + "@2x." + type + " 2x" alt=alt width=width height=height)

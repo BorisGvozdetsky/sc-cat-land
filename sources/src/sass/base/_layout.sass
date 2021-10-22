@@ -1,0 +1,62 @@
+@import "./normalize"
+@import "./vars"
+@import "./mixins"
+@import "./fonts"
+@import "./sprite_generated"
+  
+html 
+    height: 100%
+
+*,
+*:before,
+*:after
+    box-sizing: border-box
+
+img
+    max-width: 100%
+    height: auto
+
+a 
+    color: inherit
+
+p 
+    margin: 0 0 20px
+
+body
+    display: flex
+    flex-direction: column
+    min-height: 100%
+    font-size: 18px
+    line-height: 22px
+    font-family: $font-regular
+    color: $color-black
+    margin: 0
+    background: $color-white
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+.visually-hidden 
+    position: absolute
+    width: 1px
+    height: 1px
+    margin: -1px
+    padding: 0
+    overflow: hidden
+    border: 0
+    clip: rect(0 0 0 0)
+
+input[type=text]::-ms-clear,
+input[type=email]::-ms-clear,
+input[type=tel]::-ms-clear,
+input[type=password]::-ms-clear
+    display: none
+    width: 0
+    height: 0
+
+input[type=text]::-ms-reveal,
+input[type=email]::-ms-reveal,
+input[type=tel]::-ms-reveal,
+input[type=password]::-ms-reveal
+    display: none
+    width: 0
+    height: 0

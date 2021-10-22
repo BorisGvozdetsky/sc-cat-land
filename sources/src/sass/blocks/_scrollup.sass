@@ -1,0 +1,20 @@
+.scrollup
+    padding: 0
+    border: 0
+    font: inherit
+    color: inherit
+    background: $color-blue url(../images/arrow-up.svg) no-repeat center
+    cursor: pointer
+    position: absolute
+    display: block
+    width: 59px
+    height: 59px
+    bottom: -32px
+    right: 30px
+    &:hover
+        background-color: rgba($color-blue, 0.8)
+    &:active
+        background-color: rgba($color-blue, 0.5)
+    @include r(767px)
+        display: none
+

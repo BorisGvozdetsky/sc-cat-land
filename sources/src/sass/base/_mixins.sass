@@ -1,0 +1,10 @@
+@mixin r($width)
+    @media only screen and (max-width: $width)
+        @content
+
+@mixin font-face($font-name, $font-file, $font-weight)
+    @font-face
+        font-family: '#{$font-name}'
+        font-display: swap
+        font-weight: '#{$font-weight}'
+        src: url('../fonts/#{$font-file}.woff') format('woff'), url('../fonts/#{$font-file}.woff2') format('woff2')
